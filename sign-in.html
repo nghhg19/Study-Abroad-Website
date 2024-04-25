@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Abroad at Home: Sign In</title>
+        <link href = "resources/styles/sign-in.css" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="resources/images/favpng_globe-world-clip-art.png" />
+    </head>
+    <body>
+        <header>
+            <img src = "resources/images/abroadlogo.png" alt = "Abroad at Home Logo" />
+        </header>
+        <div id="login-block">
+            <form id="login-form">
+                <h1 class = "form-title" id = "title">Sign In</h1>
+                <div class = "form-input">
+                    <input type="text" name="username" id="username" placeholder="Username" required>
+                </div>
+                <div class = "form-input">
+                    <input type="password" name="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="button" class = "form-button" id="submit-button">Continue</button>
+                <div id = "form-message-error">
+                    <p>Incorrect Username/Password Combination</p>
+                </div>
+                <p class = "form-text">
+                    <a class = "form-link" href = "./sign-up.html">Don't have an account? Sign up here</a>
+                </p>
+                
+            </form>
+            
+        </div>
+        <!--<script src = "resources/scripts/users.js" type="module"></script>-->
+    </body>
+    <script type='text/javascript' > 
+        let currentUser; 
+      </script>
+    <script type="module" src = "resources/scripts/login.js"></script>
+</html>

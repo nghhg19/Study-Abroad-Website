@@ -1,0 +1,128 @@
+html {
+    font-family: Helvetica, sans-serif;
+    color: #a64ac9;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5e6cc;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+header img {
+    max-width: 300px;
+    padding: 5px 0px;
+}
+
+nav {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+nav a {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #ffb485;
+    color: #a64ac9;
+}
+
+#title {
+    margin-top: 70px;
+}
+
+h2 {
+    text-align: center;
+    color: #a64ac9;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+#friend-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+#find-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.profile-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 25%);
+    grid-gap: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 35px;
+    height: 200px;
+    box-shadow: 3px 6px;
+}
+
+.profile-box img {
+    width: 100px;
+    border-radius: 50%;
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+}
+
+.profile-box .name {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+    padding-left: 5px;
+}
+
+.profile-box .school {
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 3;
+}
+
+.profile-box .nation {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 3;
+}
+
+.profile-box .lang {
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 3;
+}
+
+.profile-box button {
+    margin-bottom: 5px;
+    display: block;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border: 2px solid;
+    cursor: pointer;
+    background: linear-gradient(to right, transparent 50%, #ffb485 50%);
+    background-size: 200%;
+    background-position: left;
+    transition: background-position 0.5s;
+}
+
+.profile-box button:hover {
+    background-position: right;
+}
+
+.profile-box .zoom {
+    grid-row: 4 / span 1;
+    grid-column: 1 / span 2;
+}
+
+.profile-box .phone {
+    grid-row: 4 / span 1;
+    grid-column: 3 / span 2;
+}
+
+.profile-box .find-friend {
+    grid-row: 4 / span 1;
+    grid-column: 2 / span 2;
+}

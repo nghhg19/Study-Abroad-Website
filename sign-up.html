@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Abroad at Home: Sign Up</title>
+        <link href = "resources/styles/sign-up.css" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="resources/images/favpng_globe-world-clip-art.png" />
+    </head>
+    <header>
+        <img src = "resources/images/abroadlogo.png" alt = "Abroad at Home Logo" />
+    </header>
+    <div id="signup-block">
+        <form method="POST" action= "./create-profile.html"  id="login-form">
+            <h1 class = "form-title">Sign Up</h1>
+            <!--<div class = "form-message form-message-error">Incorrect Username/Password Combination</div>-->
+            <div class = "form-input">
+                <input type="text" name="username" id="username" placeholder="Username" required>
+            </div>
+            <div class = "form-input">
+                <input type="password" name="password" id="password" placeholder="Password" required>
+            </div>
+            <div class = "form-input">
+                <input type="password" name="repeat" id="repeat" placeholder="Repeat Password" required>
+            </div>
+            <button class = "form-button" type="submit">Create Account</button>
+            <p class = "form-text">
+                <a class = "form-link" href = "./sign-in.html">Already have an account? Sign in here</a>
+            </p>
+        </form>
+    </div>
+</html>
